@@ -1,4 +1,4 @@
-package oop.labor03.lab3_1;
+package oop.labor02;
 
 public class BankAccount {
     private String accountNumber;
@@ -16,22 +16,17 @@ public class BankAccount {
         return balance;
     }
 
-    public String toString() {
-        return "BankAccount{" +
-                "accountNumber='" + accountNumber + '\'' +
-                ", balance=" + balance +
-                '}';
+    public String tostring() {
+        return accountNumber + " " + balance;
     }
 
     public void deposit(double toadd) {
-        if(toadd>0)
-            balance += toadd;
+        balance += toadd;
     }
 
-    public boolean withdraw(double toget) {
+    public void withdraw(double toget) {
         if (toget > balance)
-            return false;
-        else {balance -= toget;
-            return true;}
+            System.out.println("You dont have enough money");
+        else balance -= toget;
     }
 }

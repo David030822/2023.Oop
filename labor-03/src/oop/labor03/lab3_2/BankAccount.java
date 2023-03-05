@@ -1,4 +1,4 @@
-package oop.labor03.lab3_1;
+package oop.labor03.lab3_2;
 
 public class BankAccount {
     private String accountNumber;
@@ -24,14 +24,16 @@ public class BankAccount {
     }
 
     public void deposit(double toadd) {
-        if(toadd>0)
+        if (toadd > 0)
             balance += toadd;
     }
 
     public boolean withdraw(double toget) {
         if (toget > balance)
             return false;
-        else {balance -= toget;
-            return true;}
+        else {
+            balance -= toget;
+            return true;
+        }
     }
 }
