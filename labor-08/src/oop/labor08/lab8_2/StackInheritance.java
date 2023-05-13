@@ -14,7 +14,7 @@ public class StackInheritance extends ArrayList {
             this.add(item);
             return;
         }
-        System.out.println("tele verem");
+        System.out.println("tele a verem");
     }
 
     public void pop() {
