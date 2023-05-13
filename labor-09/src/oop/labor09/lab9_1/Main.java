@@ -26,7 +26,7 @@ public class Main {
             queue.printQueue();
         }
 
-        System.out.println("Testing ArrayListQueue equals:");
+        System.out.println("Testing ArrayList Queue equals:");
         IQueue q1 = new ArrayListQueue(5);
         IQueue q2 = new ArrayListQueue(10);
         for( int i=0; i<5; ++i){
@@ -34,6 +34,23 @@ public class Main {
             q2.enQueue( i );
         }
         System.out.println( q1.equals( q2 ));
+
+        System.out.println("Testing Circular Queue equals:");
+        IQueue q3 = new CircularQueue(5);
+        IQueue q4 = new CircularQueue(5);
+        for( int i=1; i<6; ++i){
+            q3.enQueue( i );
+        }
+        q4.enQueue( 1 );
+        q4.enQueue( 1 );
+        for( int i=1; i<4; ++i){
+            q4.enQueue( i);
+        }
+        q4.deQueue();
+        q4.deQueue();
+        q4.enQueue( 4 );
+        q4.enQueue( 5 );
+        System.out.println( q3.equals( q4 ));
 
     }
 }
