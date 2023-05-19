@@ -37,4 +37,6 @@ public class StackInheritance extends ArrayList {
     public boolean isFull() {
         return this.size() == capacity;
     }
+
+    public boolean isEmpty(){return this.size() == 0; }
 }

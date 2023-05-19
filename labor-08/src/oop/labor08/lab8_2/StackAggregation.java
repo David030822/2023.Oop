@@ -39,4 +39,8 @@ public class StackAggregation {
         }
         return items.get(items.size() - 1);
     }
+
+    public int getSize(){
+        return items.size();
+    }
 }
