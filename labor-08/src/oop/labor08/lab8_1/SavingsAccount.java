@@ -19,4 +19,10 @@ public class SavingsAccount extends oop.labor08.lab8_1.BankAccount {
         this.balance += this.interestRate * this.balance;
     }
 
+    @Override
+    public String toString() {
+        return "SavingsAccount{" +
+                "interestRate=" + interestRate +
+                '}';
+    }
 }

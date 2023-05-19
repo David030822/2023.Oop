@@ -17,8 +17,8 @@ public class BankAccount {
         StringBuilder result = new StringBuilder();
         result.append(PREFIX);
         result.append("00000000");
-        String numaccountsstr = Integer.toString(numAccounts);
-        result.append(numaccountsstr);
+        String numAccountsStr = Integer.toString(numAccounts);
+        result.append(numAccountsStr);
         return result.toString();
     }
 
